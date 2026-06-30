@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    
+</head>
+<body>
+    <div class="container">
+        <div class="form-container">
+            <h2><span>Welcome</span></h2>
+            <p>Register new account</p>
+            <div class="toggle">
+                <input type="radio" name="account" id="master" checked>
+                <label for="master">Master</label>
+                <input type="radio" name="account" id="client">
+                <label for="client">Client</label>
+            </div>
+            <form>
+                <label>Full Name</label>
+                <input type="text" placeholder="Yuliia Koval">
+                
+                <label>E-mail</label>
+                <input type="email" placeholder="ol2007july@gmail.com">
+                
+                <label>Country</label>
+                <select>
+                    <option>Ukraine</option>
+                    <option>USA</option>
+                    <option>UK</option>
+                </select>
+                
+                <label>City</label>
+                <select>
+                    <option>Kryvyi Rih</option>
+                </select>
+                
+                <label>Phone</label>
+                <input type="text" placeholder="+38 (095) 168 72 47">
+                
+                <div class="checkbox">
+                    <input type="checkbox" id="agree">
+                    <label for="agree">I'm agree with the <a href="#">Policy Privacy</a></label>
+                </div>
+
+                <button type="submit">GET STARTED</button>
+            </form>
+        </div>
+        <div class="illustration">
+            <img src="illustration.png" alt="Illustration">
+        </div>
+    </div>
+</body>
+</html>

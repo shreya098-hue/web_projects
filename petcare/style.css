@@ -1,0 +1,224 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin-top:30px;
+    margin-bottom: 0;
+    margin-right: 30px;
+    padding: 0;
+    background: palegoldenrod;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: top;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+.logo {
+    font-size: 24px;
+    font-weight: 600;
+    color: #ff9800;
+}
+.logo img{
+    width: 80px;
+    height: 80px;
+}
+
+h3{
+    font-size: 10px;
+    font-weight: 20px;
+}
+#para{
+    font-size: 14px;
+    width: 80px;
+    height: 10px;
+}
+.doggy ul {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+    margin-left: 15%;
+    margin-right: 5%;
+}
+
+.doggy ul li{
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.doggy ul li:hover {
+    background-color: #ffffff;
+}
+/* .doggy ul li {
+    margin-right: 10px;
+} */
+
+.doggy ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+}
+
+.hero {
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+    background: #fff;
+    height: 700px;
+    margin-bottom:none;
+    margin-right: 10px;
+    border-radius: 15px;
+}
+
+
+.hero h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+}
+.hero p {
+    font-size: 20px;
+    color: #666;
+    padding-bottom: 10px;
+}
+
+.pet-types {
+    display: inline;
+    width: 40px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+}
+.search-bar {
+    /* display: inline-block; */
+    width: fit-content;
+    /* height: fit-content; */
+    overflow: hidden;
+    margin-top: 15px;
+    border-radius: 18px;
+    border: 1px solid rgb(207, 215, 215);
+    background-color: rgb(213, 205, 205);
+}
+.search-bar a {
+    display: inline-block;
+    text-decoration: none;
+    padding: 10px 10px;
+    margin-right: 10px;
+
+    cursor: pointer;
+}
+.search-btn {
+    border: none;
+    border-radius: 18px;
+    background: #8bc34a;
+    color: white;
+    /* padding-right: 10px; */
+    
+    
+}
+
+.carousel-container{
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow-x: scroll;
+    width: 380px;
+    flex-wrap: wrap;
+}
+
+.pet-types img {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    transition:transform  0.3s ease-in-out;
+    overflow-wrap: hidden;
+    white-space: nowrap;
+    /* overflow-x:hidden; */
+    margin-right: 10px;
+
+}
+.pet-types {
+/* overflow-x: auto; */
+white-space: nowrap;
+display: flex;
+}
+
+#nextbttn{
+    background-color: #2196f3;
+    border: none;
+    cursor: pointer;
+
+}
+
+.hero-image img {
+    
+    /* background-color: palevioletred; */
+    max-width: 400px;
+    padding: 100px;
+    width: 400px;
+
+    
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+.shinchan{
+    /* background-color:white; */
+    height: 500px;
+    margin-left: 30px;
+
+
+}
+.services {
+    display: inline-flex;
+    justify-content: space-around;
+    /* margin: 50px 20px; */
+    margin-bottom: 150px;
+
+}
+.service-box {
+    width: 150px;
+    padding: 20px;
+    border-radius: 20px 10px 20px 10px;
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    transform: rotate(-5deg);
+    margin-inline: 25px;
+    margin-top: 25px;
+
+
+}
+
+.boarding { background: #8bc34a;}
+.veterinary { background: #2196f3; }
+.live-video { background: #ff5722; }
+.training { background: #b08fe9; }
+.grooming { background: #009688; }
+
+.shinchan .doggy {
+    height:100%;
+    width: 35%;
+    float: right;
+    border: 2px;
+    border-radius: 18px;
+    background-color: rgb(234 76 137);
+    height: 450px;
+    overflow: hidden;
+    text-align: center;
+    border-bottom-left-radius:33%;
+    margin-top:9px;
+    margin-right:20px;
+}
+
+.shinchan .doggy img {
+    width: 85%;
+    
+}
+#nextbttn{
+    height: 25px;
+    width: 25px;
+    border-radius: 25px;
+    margin-bottom: 2px;
+    cursor:pointer;
+}
+@media (max-width: 768px) { .pet-types img { max-width: 100%; height: auto; } }

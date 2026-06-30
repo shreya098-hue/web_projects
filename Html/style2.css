@@ -1,0 +1,132 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #1b71f2, #b53de4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+ .container { 
+    background: rgb(255, 255, 255);
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 600px;
+    text-align: center; 
+} 
+
+ h2 {
+    margin-bottom: 20px;
+    position: relative;
+    font-weight: bold;
+    text-align: start;
+    
+} 
+
+h2::after{
+     content:"";
+     display:block;
+     width: 40px;
+     height: 3px;
+     background:linear-gradient(to right, #1b71f2, #b53de4);
+} 
+
+ .input-group {
+    display: flex;
+    justify-content: space-between; 
+    margin-bottom:15px;
+}
+
+.input-group div {
+    display: flex;
+    flex-direction: column;
+    width: 48%;
+}
+
+label {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+input {
+    padding: 8px;
+    border: 1px solid #607ce9;
+    border-radius: 4px;
+    outline: none;
+}
+
+.gender-group {
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+.gender-options {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+}
+
+.gender-options label {
+    font-size: 14px;
+    cursor: pointer;
+}
+
+button {
+    width: 100%;
+    padding: 7px;
+    background: linear-gradient(to right, #1b71f2, #b53de4);
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+
+    .input-group {
+        flex-direction: column;
+    }
+
+    .input-group div {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .gender-options {
+        flex-direction: column;
+    }
+
+    .gender-options label {
+        margin-bottom: 5px;
+    }
+}
+
+/* Phones (max-width: 480px) */
+@media screen and (max-width: 480px) {
+    body {
+        height: auto;
+        padding: 20px;
+    }
+
+    .container {
+        width: 100%;
+        padding: 20px;
+    }
+
+    button {
+        font-size: 14px;
+        padding: 8px;
+    }
+} 
